@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Up FF - BARSHOP</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    h1 {
+      color: #00ffcc;
+    }
+    form {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+    label, input, select, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00ccaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>BARSHOP - Top Up Free Fire</h1>
+  <form action="https://wa.me/6281234567890" method="GET" target="_blank">
+    <label for="id">ID Player:</label>
+    <input type="text" id="id" name="id" placeholder="Masukkan ID FF kamu" required />
+
+    <label for="server">Server:</label>
+    <input type="text" id="server" name="server" placeholder="Contoh: 1234 (jika ada)" />
+
+    <label for="nominal">Pilih Nominal:</label>
+    <select id="nominal" name="nominal" required>
+      <option value="">-- Pilih Diamond --</option>
+      <option value="85 Diamond - 15.000">85 Diamond - Rp15.000</option>
+      <option value="170 Diamond - 30.000">170 Diamond - Rp30.000</option>
+      <option value="355 Diamond - 60.000">355 Diamond - Rp60.000</option>
+    </select>
+
+    <label for="pembayaran">Metode Pembayaran:</label>
+    <input type="text" id="pembayaran" name="pembayaran" value="DANA" readonly />
+
+    <button type="submit">Kirim Pesanan</button>
+  </form>
+</body>
+</html>
